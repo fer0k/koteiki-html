@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Атель для котеек</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fonts/Lato/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Rubik/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="page__container">
+                <div class="header__logo logo">
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="Котейки">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul class="menu">
+                        <li class="menu__list menu__list--active">Почему мы?</li>
+                        <li class="menu__list">Номера</li>
+                        <li class="menu__list">Отзывы</li>
+                        <li class="menu__list">Как нас найти</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="page__container">
+                <div class="page__title page-head">
+                    <h1 class="page-head__title">Наши номера</h1>
+                    <div class="page-head__additional">
+                        <div class="sorting">
+                            <div class="sorting__list">
+                                <div class="sorting__item" data-value="su" tabindex="0" style="display: block;">
+                                    <i class="icon icon--up"></i>
+                                    По площади
+                                </div>
+                                <div class="sorting__item" data-value="sd" tabindex="0">
+                                    <i class="icon icon--down"></i>
+                                    По площади
+                                </div>
+                                <div class="sorting__item" data-value="pu" tabindex="0">
+                                    <i class="icon icon--up"></i>
+                                    По цене
+                                </div>
+                                <div class="sorting__item" data-value="pd" tabindex="0">
+                                    <i class="icon icon--down"></i>
+                                    По цене
+                                </div>
+                            </div>
+                            <div class="sorting__marker sorting__marker--active">
+                                <i clas="icon icon--downmenu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__aside">
+                    <div class="filter">
+                        <div class="filter__group">
+                            <div class="filter__name">Цена за сутки, <i class="ruble">Р</i></div>
+                            <input type="text" class="input">
+                            <input type="text" class="input">
+                        </div>
+                        <div class="filter__group">
+                            <div class="filter__name">Площадь</div>
+                            <input type="checkbox" class="input">
+                            <input type="checkbox" class="input">
+                            <input type="checkbox" class="input">
+                        </div>
+                        <div class="filter__group">
+                            <div class="filter__name">Оснащение номера</div>
+                            <input type="checkbox" class="input">
+                            <input type="checkbox" class="input">
+                            <input type="checkbox" class="input">
+                        </div>
+                        <div class="filter__actions">
+                            <div class="filter__btn btn btn--active">Применить</div>
+                            <div class="filter__btn btn">Сбросить фильтр</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__content">
+                    <div class="catalog">
+                        <div class="catalog__list">
+                            <div class="catalog__card card">
+                                <div class="card__view">
+                                    <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                </div>
+                                <div class="card__info">
+                                    <div class="card__title">Эконом</div>
+                                    <ul class="card__list">
+                                        <li>
+                                            <span class="card__param">Размеры (ШхГхВ)</span>
+                                            <span class="card__value">90х100х180 см</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__param">Площадь</span>
+                                            <span class="card__value">0,90 м2</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__param  card__param--clear">Оснащение номера</span>
+                                            <span class="card__value">
+                                                <i class="icon icon--add1"></i>
+                                                <i class="icon icon--add2"></i>
+                                                <i class="icon icon--add3"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="card__param card__param--price">Цена за сутки</span>
+                                            <span class="card__value card__value--price">100<i class="ruble">Р</i></span>
+                                        </li>
+                                    </ul>
+                                    <div class="card__actions">
+                                        <div class="card__btn btn">
+                                            Забронировать
+                                            <i class="cat-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

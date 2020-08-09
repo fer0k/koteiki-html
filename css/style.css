@@ -58,6 +58,9 @@ img {
 .header__logo {
     padding: 9px 0 7px;
 }
+.header__logo--mini {
+    padding: 1px 0 1px;
+}
 /*-------------*/
 .main {
     padding-top: 71px;
@@ -67,6 +70,7 @@ img {
 .footer {
     font-size: 12px;
     line-height: 14px;
+    padding: 20px 0;
     color: #8F8F8F;
 }
 .footer__dev {
@@ -172,6 +176,7 @@ img {
 .sorting__list {
     position: absolute;
     left: 0;
+    right: 0;
     top: 0;
     display: flex;
     flex-flow: column nowrap;

@@ -16,7 +16,7 @@
     <div class="page">
         <div class="header">
             <div class="page__container page__container--header">
-                <div class="header__logo logo">
+                <div class="header__logo" id="js-logo">
                     <a href="/">
                         <img src="./images/logo.svg" alt="Котейки">
                     </a>
@@ -37,7 +37,7 @@
                     <h1 class="page-head__title">Наши номера</h1>
                     <div class="page-head__additional">
                         <div class="sorting">
-                            <div class="sorting__list">
+                            <div class="sorting__list" id="js-sorting__list">
                                 <div class="sorting__item" data-value="su" tabindex="0" style="display: block;">
                                     <i class="icon icon--list icon--up"></i>
                                     По площади
@@ -124,7 +124,9 @@
                             <div class="catalog__card">
                                 <div class="card">
                                     <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        </picture>
                                     </div>
                                     <div class="card__info">
                                     <div class="card__title">Эконом</div>
@@ -162,7 +164,49 @@
                             <div class="catalog__card">
                                 <div class="card">
                                     <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-2.jpg" alt="Кот в эконом">
+                                        </picture>
+                                    </div>
+                                    <div class="card__info">
+                                    <div class="card__title">Эконом</div>
+                                    <ul class="card__list">
+                                        <li class="card__group">
+                                            <span class="card__param">Размеры (ШхГхВ)</span>
+                                            <span class="card__value">90х100х180 см</span>
+                                        </li>
+                                        <li class="card__group">
+                                            <span class="card__param">Площадь</span>
+                                            <span class="card__value">0,90 м2</span>
+                                        </li>
+                                        <li class="card__group">
+                                            <span class="card__param  card__param--clear">Оснащение номера</span>
+                                            <span class="card__value">
+                                                <i class="card__icon icon icon--add1"></i>
+                                                <i class="card__icon icon icon--add2"></i>
+                                                <i class="card__icon icon icon--add3"></i>
+                                            </span>
+                                        </li>
+                                        <li class="card__group">
+                                            <span class="card__param card__param--price">Цена за сутки</span>
+                                            <span class="card__value card__value--price">100<i class="ruble">Р</i></span>
+                                        </li>
+                                    </ul>
+                                    <div class="card__actions">
+                                        <div class="card__btn btn" tabindex="0">
+                                            Забронировать
+                                            <i class="cat-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="card">
+                                    <div class="card__view">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-3.jpg" alt="Кот в эконом">
+                                        </picture>
                                     </div>
                                     <div class="card__info">
                                     <div class="card__title">Эконом</div>
@@ -238,7 +282,9 @@
                             <div class="catalog__card">
                                 <div class="card">
                                     <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-4.jpg" alt="Кот в эконом">
+                                        </picture>
                                     </div>
                                     <div class="card__info">
                                     <div class="card__title">Эконом</div>
@@ -276,7 +322,9 @@
                             <div class="catalog__card">
                                 <div class="card">
                                     <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-5.jpg" alt="Кот в эконом">
+                                        </picture>
                                     </div>
                                     <div class="card__info">
                                     <div class="card__title">Эконом</div>
@@ -314,83 +362,9 @@
                             <div class="catalog__card">
                                 <div class="card">
                                     <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
-                                    </div>
-                                    <div class="card__info">
-                                    <div class="card__title">Эконом</div>
-                                    <ul class="card__list">
-                                        <li class="card__group">
-                                            <span class="card__param">Размеры (ШхГхВ)</span>
-                                            <span class="card__value">90х100х180 см</span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param">Площадь</span>
-                                            <span class="card__value">0,90 м2</span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param  card__param--clear">Оснащение номера</span>
-                                            <span class="card__value">
-                                                <i class="card__icon icon icon--add1"></i>
-                                                <i class="card__icon icon icon--add2"></i>
-                                                <i class="card__icon icon icon--add3"></i>
-                                            </span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param card__param--price">Цена за сутки</span>
-                                            <span class="card__value card__value--price">100<i class="ruble">Р</i></span>
-                                        </li>
-                                    </ul>
-                                    <div class="card__actions">
-                                        <div class="card__btn btn" tabindex="0">
-                                            Забронировать
-                                            <i class="cat-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="catalog__card">
-                                <div class="card">
-                                    <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
-                                    </div>
-                                    <div class="card__info">
-                                    <div class="card__title">Эконом</div>
-                                    <ul class="card__list">
-                                        <li class="card__group">
-                                            <span class="card__param">Размеры (ШхГхВ)</span>
-                                            <span class="card__value">90х100х180 см</span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param">Площадь</span>
-                                            <span class="card__value">0,90 м2</span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param  card__param--clear">Оснащение номера</span>
-                                            <span class="card__value">
-                                                <i class="card__icon icon icon--add1"></i>
-                                                <i class="card__icon icon icon--add2"></i>
-                                                <i class="card__icon icon icon--add3"></i>
-                                            </span>
-                                        </li>
-                                        <li class="card__group">
-                                            <span class="card__param card__param--price">Цена за сутки</span>
-                                            <span class="card__value card__value--price">100<i class="ruble">Р</i></span>
-                                        </li>
-                                    </ul>
-                                    <div class="card__actions">
-                                        <div class="card__btn btn" tabindex="0">
-                                            Забронировать
-                                            <i class="cat-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="catalog__card">
-                                <div class="card">
-                                    <div class="card__view">
-                                        <img src="./images/card_preview/catalog-img-1.jpg" alt="Кот в эконом">
+                                        <picture>
+                                            <img src="./images/card_preview/catalog-img-6.jpg" alt="Кот в эконом">
+                                        </picture>
                                     </div>
                                     <div class="card__info">
                                     <div class="card__title">Эконом</div>
@@ -446,5 +420,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

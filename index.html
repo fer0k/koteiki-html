@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./fonts/Lato/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Rubik/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/ALSRubl/stylesheet.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="page">
         <div class="header">
-            <div class="page__container">
+            <div class="page__container page__container--header">
                 <div class="header__logo logo">
                     <a href="/">
                         <img src="./images/logo.svg" alt="Котейки">
@@ -64,24 +65,56 @@
                     <div class="filter">
                         <div class="filter__group">
                             <div class="filter__name">Цена за сутки, <i class="ruble">Р</i></div>
-                            <input type="text" class="input">
-                            <input type="text" class="input">
+                            <div class="filter__row">
+                                <div class="filter__col">
+                                    <i class="range range--down"></i><input type="text" class="input input--range">
+                                </div>
+                                <div class="filter__col">
+                                    <i class="range range--up"></i><input type="text" class="input input--range">
+                                </div>
+                            </div>
                         </div>
                         <div class="filter__group">
                             <div class="filter__name">Площадь</div>
-                            <input type="checkbox" class="input">
-                            <input type="checkbox" class="input">
-                            <input type="checkbox" class="input">
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="s1">
+                                <label class="filter__label" for="s1">0,63 м<sup>2</sup></label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="s2">
+                                <label class="filter__label" for="s2">0,62 м<sup>2</sup></label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="s3">
+                                <label class="filter__label" for="s3">0,61 м<sup>2</sup></label>
+                            </div>
                         </div>
                         <div class="filter__group">
                             <div class="filter__name">Оснащение номера</div>
-                            <input type="checkbox" class="input">
-                            <input type="checkbox" class="input">
-                            <input type="checkbox" class="input">
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="dop1">
+                                <label class="filter__label" for="dop1">Пустой номер</label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="dop2">
+                                <label class="filter__label" for="dop2">Лежак</label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="dop3">
+                                <label class="filter__label" for="dop3">Когтеточка</label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="dop4">
+                                <label class="filter__label" for="dop4">Игровой-комплекс</label>
+                            </div>
+                            <div class="filter__check">
+                                <input type="checkbox" class="input" id="dop5">
+                                <label class="filter__label" for="dop5">Домик</label>
+                            </div>
                         </div>
                         <div class="filter__actions">
-                            <div class="filter__btn btn btn--active">Применить</div>
-                            <div class="filter__btn btn">Сбросить фильтр</div>
+                            <div class="filter__btn btn" tabindex="0">Применить</div>
+                            <div class="filter__btn btn" tabindex="0">Сбросить фильтр</div>
                         </div>
                     </div>
                 </div>
